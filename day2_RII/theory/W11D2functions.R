@@ -96,7 +96,7 @@ for (city in cities){
 # EJEMPLO CON RANGO
 
 for (i in 1:length(cities)) {
-  print(paste(cities[i], "is on position", i, "in the cities vector"))
+  print(paste(cities[i], "is on position", i, "of the cities vector"))
 }
 
 # EJEMPLO DOBLE FOR
@@ -274,6 +274,8 @@ pow_two <- function(x, print_info = TRUE) {
 }
 # el return en R lleva parentesis
 
+pow_two(7)
+
 # tira el dado
 
 dado <- function() {
@@ -295,6 +297,7 @@ interpret <- function(num_views) {
     return(0)
   }
 }
+interpret(14)
 
 # define una funcion que use interpret, donde
 # views: es un vector con datos a interpretar
@@ -374,7 +377,7 @@ lapply(nyc,class)
 # para convertir una lista a un vector
 unlist(lapply(split_math, nchar))
 
-# nchar(c("GAUSS", "1777"))
+nchar(c("GAUSS", "1777"))
 
 # alternativa (vector/matriz)
 sapply(split_math, nchar)
